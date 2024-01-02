@@ -1,0 +1,14 @@
+:root{
+    --lm-background: #ffb3cc;
+    --lm-foreground: #000000;
+    --dm-foreground: #ffb3cc;
+    --dm-background: #000000;
+    --sm-l-foreground: var(--lm-foreground);
+    --sm-l-background: #ffffff;
+    --sm-d-foreground:var(--sm-l-background);
+    --sm-d-background:var(--sm-l-foreground);
+}
+body{
+    background-color: var(--lm-background);
+    color:var(--lm-foreground);
+}
