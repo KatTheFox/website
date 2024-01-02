@@ -2,7 +2,7 @@
     --lm-background: #ffb3cc;
     --lm-foreground: #000000;
     --dm-foreground: #ffb3cc;
-    --dm-background: #000000;
+    --dm-background: #1f1f1f;
     --sm-l-foreground: var(--lm-foreground);
     --sm-l-background: #ffffff;
     --sm-d-foreground:var(--sm-l-background);
