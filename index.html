@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <label for="mods"><a href="projectlist">Mods and Games</a></label>
-      <select id="mods">
-        <option><a href="mods/cs">Cultist Simulator</a></option>
-        <option><a href="mods/boh">Book of Hours</a></option>
-        <option><a href="mods/sn">Subnautica</a></option>
-        <option><a href="mods/mc">Minecraft</a></option>
-      </select>
+    <div id="titlebar">
+      <div class="dropdown" id="mgdropdown">
+        <a href="projectlist">Mods and Games</a>
+        <div class="dropdown-content" id="mgdropdown-content">
+          <a href="mods/cs">Cultist Simulator</a>
+          <a href="mods/boh">Book of Hours</a>
+          <a href="mods/sn">Subnautica</a>
+          <a href="mods/mc">Minecraft</a>
+        </div>
+      </div>
     </div>
     <div style="max-width: 80%; margin: 0 auto">
       <h2>Hi, welcome to the jank zone</h2>
