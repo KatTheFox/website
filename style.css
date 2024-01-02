@@ -12,7 +12,13 @@ body{
     background-color: var(--lm-background);
     color:var(--lm-foreground);
 }
-
+.main-content{
+    max-width: 80%; margin: 0 auto
+}
+#titlebar{
+    width:100%;
+    border: #000000;
+}
  /* Dropdown Button */
  .dropbtn {
     background-color: var(--dm-background);
@@ -26,6 +32,7 @@ body{
   .dropdown {
     position: relative;
     display: inline-block;
+    border: #000000;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -41,6 +48,7 @@ body{
   /* Links inside the dropdown */
   .dropdown-content a {
     padding: 12px 16px;
+    color: var(--lm-foreground);
     text-decoration: none;
     display: block;
   }
