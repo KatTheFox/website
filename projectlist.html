@@ -7,53 +7,109 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-content">
-      This page is still under construction
-      <h2>My Projects</h2>
-      <h3>Mods</h3>
-      <h4>Cultist Simulator</h4>
-      <li>
-        <a href="github.com/KatTheFox/The-Wheel">The Wheel</a>: A modern time
-        control mod for Cultist Simulator. Adjust the fast-forward speed between
-        0.2x and 32x, skip forward in time with keybinds, play the game entirely
-        paused with skip-to-event keys, and more.
-      </li>
-      <li>
-        <a href="github.com/KatTheFox/hawthorn">Hawthorn</a>: A Shelf mod for
-        Cultist Simulator, aimed at adding compatibility with Shelves and most
-        major content mods. Also includes a set of opinionated vanilla shelves,
-        as well as requests from the community.
-      </li>
-      <li>
-        <a href="github.com/KatTheFox/tewwibwecuwse">A Tewwibwe Cuwse</a>: A
-        Cultist Simulator mod that runs an uwu text transformer on all in-game
-        text, including mods. Not for the faint of heart.
-      </li>
-      <li>
-        <a href="github.com/KatTheFox/CS-mods"
-          >Collected Cultist Simulator Mods</a
-        >: A repository containing my smaller, miscellaneous mods for Cultist
-        Simulator
-      </li>
-      <br />
-      <h4>Book of Hours</h4>
-      <li>
-        <a href="github.com/KatTheFox/TheWheelBoh">The Wheel (BoH Edition)</a>:
-        A port of my Cultist Simulator time control mod, The Wheel, to Book of
-        Hours.
-      </li>
-      <li>
-        <a href="github.com/KatTheFox/HistoryBuilder">HistoryBuilder</a>: A
-        framework for custom Origin creation in Book of Hours, with minimal
-        modification of vanilla content.
-      </li>
+    <div id="titlebar">
+      <div id="homewrapper" class="dropdown">
+        <a id="homebtn" href="index.html">Home</a>
+      </div>
+      <div class="dropdown" id="amdropdown">
+        <a class="dropbtn" href="aboutme.html">About Me</a>
+        <div class="dropdown-content" id="mgdropdown-content">
+          <a href="aboutme/socials.html">My Socials</a>
+        </div>
+      </div>
+      <div class="dropdown" id="mgdropdown">
+        <a class="dropbtn" href="projectlist.html">Mods and Games</a>
+        <div class="dropdown-content" id="mgdropdown-content">
+          <a href="mods/cs.html">Cultist Simulator</a>
+          <a href="mods/boh.html">Book of Hours</a>
+          <a href="mods/sn.html">Subnautica</a>
+          <a href="mods/mc.html">Minecraft</a>
+        </div>
+      </div>
+    </div>
 
-      <h3>Web</h3>
-      <li>
-        <a href="katthefox.github.io/notwaitb">NOTWAITB</a>, short for None Of
-        Those Words Are In The Bible. A tool to check how many words in a text
-        snippet are, in fact, in the bible.
-      </li>
+    <div class="sidebar" id="left-sidebar">
+      <div id="quicknav">
+        <span id="qntitle">Quick Nav</span><br />
+        <hr />
+        <a href="#top">Top</a><br />
+        <a href="#mods">Mods</a><br />
+        <a href="#cs">Cultist Simulator</a><br />
+        <a href="#boh">BoH</a><br />
+        <a href="#sn">Subnautica</a><br />
+        <a href="#web">Web</a><br />
+      </div>
+    </div>
+    <div class="main-content">
+      <h2>My Projects</h2>
+      <h3 id="mods">Mods</h3>
+      <h4 id="cs">Cultist Simulator</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/KatTheFox/The-Wheel">The Wheel</a>: A
+          modern time control mod for Cultist Simulator. Adjust the fast-forward
+          speed between 0.2x and 32x, skip forward in time with keybinds, play
+          the game entirely paused with skip-to-event keys, and more.
+        </li>
+        <li>
+          <a href="https://github.com/KatTheFox/hawthorn">Hawthorn</a>: A Shelf
+          mod for Cultist Simulator, aimed at adding compatibility with Shelves
+          and most major content mods. Also includes a set of opinionated
+          vanilla shelves, as well as requests from the community.
+        </li>
+        <li>
+          <a href="https://github.com/KatTheFox/tewwibwecuwse"
+            >A Tewwibwe Cuwse</a
+          >: A Cultist Simulator mod that runs an uwu text transformer on all
+          in-game text, including mods. Not for the faint of heart.
+        </li>
+        <li>
+          <a href="https://github.com/KatTheFox/CS-mods"
+            >Collected Cultist Simulator Mods</a
+          >: A repository containing my smaller, miscellaneous mods for Cultist
+          Simulator
+        </li>
+      </ul>
+      <h4 id="boh">Book of Hours</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/KatTheFox/TheWheelBoh"
+            >The Wheel (BoH Edition)</a
+          >: A port of my Cultist Simulator time control mod, The Wheel, to Book
+          of Hours.
+        </li>
+        <li>
+          <a href="https://github.com/KatTheFox/HistoryBuilder"
+            >HistoryBuilder</a
+          >: A framework for custom Origin creation in Book of Hours, with
+          minimal modification of vanilla content.
+        </li>
+      </ul>
+      <h4 id="sn">Subnautica</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/KatTheFox/DatabankCompletionLegacy"
+            >Databank Completion</a
+          >: A mod for Subnautica Legacy (pre-Living Large) that adds completion
+          percentages to the PDA databank. Rather naïve implementation, more a
+          proof-of-concept than a mod to play with- but it <i>is</i> functional.
+        </li>
+        <li>
+          <p>
+            Seabase Teleporter: A WIP mod that will add a new base piece, a
+            teleporter that can be built inside a seabase and will consume power
+            to warp you to any other seabase with a teleporter.
+          </p>
+        </li>
+      </ul>
+      <h3 id="web">Web</h3>
+      <ul>
+        <li>
+          <a href="https://katthefox.github.io/notwaitb">NOTWAITB</a>, short for
+          None Of Those Words Are In The Bible. A tool to check how many words
+          in a text snippet are, in fact, in the bible.
+        </li>
+      </ul>
     </div>
   </body>
 </html>
