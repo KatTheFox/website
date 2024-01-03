@@ -206,3 +206,7 @@ hr {
   background-color: var(--dark-grey);
   color: var(--white);
 }
+
+#janus.lightmode {
+  color: var(--dark-grey);
+}
