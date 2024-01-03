@@ -4,6 +4,7 @@
   --black: #000000;
   --dark-grey: #1f1f1f;
   --grey: #272727;
+  --white: #ffffff;
 }
 html {
   width: 100%;
@@ -14,12 +15,45 @@ html {
 }
 .sidebar {
   position: fixed;
-  height: 10%;
+  height: 100%;
   width: 20%;
+}
+#settings {
+  float: right;
+}
+#bottombar {
+  position: absolute;
+  bottom: 0;
+  height: 3%;
+  /* width: 100%; */
+}
+.bbitem {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--dark-grey);
+  color: var(--cherry-blossom-pink);
+  margin: 0;
+  padding: 0.25% 0%;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+  font-size: small;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.caption {
+  display: block;
+  text-align: center;
+  font-size: small;
 }
 #qntitle {
   font-size: 20px;
-  text-decoration: underline;
+  margin: 4%;
 }
 body {
   background-color: var(--cherry-blossom-pink);
@@ -29,7 +63,14 @@ body {
 .main-content {
   width: 60%;
   margin-left: 20%;
+  margin-top: 1%;
+  padding: 1%;
   margin-right: 20%;
+  border: 4px double #000000;
+}
+.mctitle {
+  margin-top: 0.5%;
+  margin-bottom: 0;
 }
 #titlebar {
   position: relative;
@@ -78,10 +119,23 @@ body {
   font-size: 14px;
 }
 a {
+  color: #530d82;
   text-decoration: none;
 }
 a:visited {
-  color: var(--grey);
+  color: #530d82;
+}
+a.fancydark:visited {
+  color: #c178f2;
+}
+a.fancydark {
+  color: #c178f2;
+}
+a.simpledark:visited {
+  color: #c178f2;
+}
+a.simpledark {
+  color: #c178f2;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -125,4 +179,30 @@ a:visited {
 #homebtn:hover {
   background-color: var(--cherry-blossom-pink);
   color: var(--black);
+}
+.qnitem {
+  margin: 3%;
+}
+/* .darkmode{
+  background-color: var(--dark-grey);
+  color: var(--cherry-blossom-pink);
+} */
+hr {
+  pointer-events: none;
+}
+.fancylight {
+  background-color: var(--cherry-blossom-pink);
+  color: var(--black);
+}
+.fancydark {
+  background-color: var(--dark-grey);
+  color: var(--cherry-blossom-pink);
+}
+.simplelight {
+  background-color: var(--white);
+  color: var(--black);
+}
+.simpledark {
+  background-color: var(--dark-grey);
+  color: var(--white);
 }

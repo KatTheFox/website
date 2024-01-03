@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kat's CS Mods</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="modeset lightmode">
+    <div id="titlebar">
+      <div id="homewrapper" class="dropdown">
+        <a class="dropbtn" href="index.html">Home</a>
+      </div>
+      <div class="dropdown" id="amdropdown">
+        <a class="dropbtn" href="aboutme.html">About Me</a>
+      </div>
+      <div class="dropdown" id="mgdropdown">
+        <a class="dropbtn" href="projectlist.html">Mods and Games</a>
+        <div class="dropdown-content" id="mgdropdown-content">
+          <a href="mods/cs.html">Cultist Simulator</a>
+          <a href="mods/boh.html">Book of Hours</a>
+          <a href="mods/sn.html">Subnautica</a>
+          <a href="mods/mc.html">Minecraft</a>
+        </div>
+      </div>
+      <div class="dropdown" id="dcdropdown">
+        <a class="dropbtn" href="projectlist.html">Discord Bots</a>
+        <div class="dropdown-content" id="dcdropdown-content">
+          <a href="https://github.com/KatTheFox/reynard">Reynard</a>
+          <a href="https://github.com/KatTheFox/ligeia">Ligeia</a>
+        </div>
+      </div>
+      <div class="dropdown" id="miscdropdown">
+        <a class="dropbtn" href="projectlist.html">Misc Projects</a>
+        <div class="dropdown-content" id="miscdropdown-content">
+          <a href="https://katthefox.github.io/notwaitb">NOTWAITB</a>
+        </div>
+      </div>
+      <div class="dropdown" id="settings">
+        <a class="dropbtn">Site Settings</a>
+        <div class="dropdown-content" id="miscdropdown-content">
+          <a href="javascript:void(0)" onclick="darkMode()">Dark Mode</a>
+          <a href="javascript:void(0)" onclick="simpleMode()">Simple Mode</a>
+        </div>
+      </div>
+      <hr
+        style="margin: 0; padding: 0; bottom: 0; z-index: 2; position: relative"
+      />
+    </div>
+
+    <div class="sidebar" id="left-sidebar">
+      <div id="quicknav">
+        <div id="qntitle"><b>Quick Nav</b></div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#top">Top</a>
+        </div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#lm">Major Mods</a>
+        </div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#sm">Smaller Mods</a>
+        </div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#history">History</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <h2 class="mctitle">Cultist Simulator Mods</h2>
+      <hr />
+      <h3 id="cs">Modlist</h3>
+      <h4 id="lm">Major Mods</h4>
+      <ul>
+        <li>
+          <a
+            class="modeset lightmode"
+            href="https://github.com/KatTheFox/The-Wheel"
+            >The Wheel</a
+          >: A modern time control mod for Cultist Simulator. Adjust the
+          fast-forward speed between 0.2x and 32x, skip forward in time with
+          keybinds, play the game entirely paused with skip-to-event keys, and
+          more.
+        </li>
+        <li>
+          <a
+            class="modeset lightmode"
+            href="https://github.com/KatTheFox/hawthorn"
+            >Hawthorn</a
+          >: A Shelf mod for Cultist Simulator, aimed at adding compatibility
+          with Shelves and most major content mods. Also includes a set of
+          opinionated vanilla shelves, as well as requests from the community.
+        </li>
+        <li>
+          <a
+            class="modeset lightmode"
+            href="https://github.com/KatTheFox/tewwibwecuwse"
+            >A Tewwibwe Cuwse</a
+          >: A Cultist Simulator mod that runs an uwu text transformer on all
+          in-game text, including mods. Not for the faint of heart.
+        </li>
+      </ul>
+      <h4 id="sm">Minor Mods</h4>
+      <p>
+        These mods are all stored at my
+        <a class="modeset lightmode" href="https://github.com/KatTheFox/CS-mods"
+          >Collected Cultist Simulator Mods</a
+        >
+        repository, as is general modding information.
+      </p>
+      <ul>
+        <li>
+          Secret Histories Ink: Adds a Secret Histories pigment, so you can
+          paint the Teresa and Christopher painting without console.
+        </li>
+        <li>
+          Looping Recruitment: Simple mod to let you automatically search for
+          acquaintances and patrons until the decks are empty. Start looping by
+          putting 2 lore fragments in the talk verb, and if you need to stop put
+          a health into the slot.
+        </li>
+        <li>
+          Improved Skintwisters: Makes Skintwisters have a 90% chance to destroy
+          evidence, the same as every other Exalt's success chance at their job,
+          instead of 70%, the same as a disciple. Made to replace an old mod
+          that was less balanced.
+        </li>
+        <li>
+          Looping Mansus: Loop your trips to the mansus. Inspired by the Looping
+          Job mod. The Peacock's Door can only be looped with the Frangiclave,
+          since it breaks mirrors, and the Spider's Door cannot be looped at
+          all, as it consumes its offerings.
+        </li>
+        <li>
+          On Matthias and the Amethyst Imago: Loss: Adds a loss sigil to the
+          cover of the book, On Matthias and the Amethyst Imago: Loss. Joke mod.
+        </li>
+      </ul>
+      <h4 id="history">A Brief Mod History</h4>
+      <p>
+        Back in July 2022, I completed a small mobile card game called
+        Underhand. It's still available on the Play Store, and was apparently a
+        college project for a trio of developers. I loved it, and was looking to
+        see if the developers had done anything else, when I came across a
+        Reddit post. Someone had emailed the developers, and had gotten a
+        response, which basically said they weren't working together anymore,
+        but anyone who wanted more Underhand should look into the game that
+        inspired it, which was something called Cultist Simulator. I downloaded
+        it and immediately was fascinated by the deceptively deep lore hiding
+        inside what was technically a game about moving cards around on a
+        tabletop.
+      </p>
+      <p>
+        It wasn't long before I discovered the game had modding support, and
+        started tinkering with the game files. After scrapping several ideas
+        that never went anywhere, I published my first mod, "Looping Mansus",
+        which just let you automate a certain part of the game that gets
+        repetitive quickly.
+      </p>
+      <p>
+        A few months later, another modder published a mod that allowed you to
+        define custom board layouts and auto-snap cards to these "shelves",
+        using a surprisingly complex "expression" system. This made it much
+        easier for me to play the game, and I quickly set up a generator to make
+        custom shelf layouts reasonably easily, and published a mod with my own
+        layouts. Apparently, my layouts were fairly sensible, since the mod (at
+        the time simply titled "Kat's Shelves") was fairly popular- it was one
+        of the first mods of its kind, which certainly helped.
+      </p>
+      <img
+        src="../images/hawthorn.jpg"
+        alt="A screenshot of some basic Hawthorn layouts"
+        width="90%"
+      />
+      <span class="caption"
+        >Look at all the pretty icons. They took forever to make.</span
+      >
+      <p>
+        My first foray into "dll modding" (Cultsim allows both content-only json
+        mods and C# patch mods using Harmony) came when one of the mods I'd been
+        using, "Adjustable Fast Forward," which does exactly what it says,
+        broke. The author didn't seem intent on maintaining it (and to this day,
+        it has not been updated) so I decided I'd just make my own. Within a few
+        hours, I had a mod that did exactly what the original did, but after
+        publishing it I got a few feature requests from community members, and
+        had more ideas of my own, and it grew to become a must-have time-control
+        mod with many features. Today, The Wheel has 1231 total unique
+        subscribers on the Steam Workshop (and is also available on github, for
+        non-steam players)
+      </p>
+      <p>
+        After seeing the relative ease with which The Wheel was born, I decided
+        to make an ambitious joke mod. I'd previously made a script to run the
+        game's content through an uwu text transformer, but that was inefficient
+        and required pregeneration. After a bit of tinkering, A Tewwibwe Cuwse
+        2.0 born, a dll mod that intercepts the game's content loading process
+        to run the transformer on all text- including mods. Notably, this
+        includes the in-game patch notes, credits, and title screen, which has
+        led to some entertaining results.
+      </p>
+      <img
+        src="../images/tewwibwecuwse.jpg"
+        alt="An example of uwu'd text in-game"
+      />
+      <span class="caption"
+        >A tewwibwe cuwse has befallen this game. Pwepawe youwsewf.</span
+      ><img src="../images/glowingreview.png" alt="" /><span class="caption"
+        >Glowing reviews from my fellow modders who've seen their mods
+        uwuified</span
+      >
+      <p>
+        As I played more and more content mods, I realized that it was becoming
+        a pain to play these mods without the shelves I'd come to rely on, and
+        decided it was time for a revamp of my shelves mod. I added new shelves
+        for all the DLC and content mods I'd played, as well as made greater use
+        of complex expressions to make shelves that pushed the limits of the
+        system (sometimes literally- back then the Shelves mod wasn't very
+        well-optimized, so autosorting would cause stutter if there were too
+        many complex expressions). I also rebranded it, in the long tradition of
+        naming mods after lore concepts, to Hawthorn. Nowadays, Hawthorn
+        includes shelves for 8 major content mods, as well as all DLCs, vanilla
+        layouts, and compatibility with minor mods.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

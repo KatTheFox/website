@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Homepage</title>
+    <title>Page Title</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -57,24 +57,61 @@
         </div>
         <hr />
         <div class="qnitem">
-          <a class="modeset lightmode" href="#mctitle">Kat's Projects</a>
+          <a class="modeset lightmode" href="#history">Context</a>
+        </div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#modlist">Modlist</a>
         </div>
       </div>
     </div>
     <div class="main-content">
-      <h2 class="mctitle">Kat's Projects</h2>
+      <h2 class="mctitle">Book of Hours Mods</h2>
       <hr />
+      <h3 id="history">A Brief History</h3>
       <p>
-        Welcome to my website. This is where I store information about my
-        various projects. Use the bar at the top to navigate the site.
+        In August 2023, the creators of Cultist Simulator released a new game.
+        Titled "Book of Hours", it... wasn't great. On launch, it was a buggy
+        mess missing critical features. Nowadays, most of the bugs have been
+        fixed, and new features have been added, but I'm still not a fan of the
+        game- the quantity-over-quality approach in this game is repulsive to me
+        (but this isn't a game review website, so I'll leave it at that).
+        Nevertheless, I'm active in the Cultist Simulator community, which
+        naturally includes Book of Hours discussion, and I still make mods for
+        it. Notably, this game does not include mod support- so these require
+        workarounds to load.
       </p>
+      <p>
+        On launch day, within a few hours of launch, I'd ported my joke Cultist
+        Simulator mod that uwuifies all game text to Book of Hours. The first
+        patch immediately broke the mod, and I scrapped the project after that
+        because of how unstable the game was, but officially the first Book of
+        Hours mod was my uwu joke mod. After that, I ported The Wheel (which is
+        much more stable) and made a framework for creating custom Origins. To
+        my knowledge, nobody has actually <i>used</i> that framework yet, but it
+        exists anyway. Maybe someday it'll come in handy.
+      </p>
+      <h3 id="modlist">Modlist</h3>
+      <ul>
+        <li>
+          <a
+            class="modeset lightmode"
+            href="https://github.com/KatTheFox/TheWheelBoh"
+            >The Wheel (BoH Edition)</a
+          >: A port of my Cultist Simulator time control mod, The Wheel, to Book
+          of Hours.
+        </li>
+        <li>
+          <a
+            class="modeset lightmode"
+            href="https://github.com/KatTheFox/HistoryBuilder"
+            >HistoryBuilder</a
+          >: A framework for custom Origin creation in Book of Hours, with
+          minimal modification of vanilla content.
+        </li>
+      </ul>
     </div>
 
-    <div class="bbitem">
-      This site is hosted on GitHub Pages, using entirely handwritten
-      HTML/CSS/JS. If you don't like the theme, you can toggle dark mode or get
-      rid of the fancy colors in the settings dropdown.
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
