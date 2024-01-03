@@ -34,22 +34,23 @@ function updateTheme() {
       if (element.classList.contains("darkmode")) {
         element.classList.remove("simplelight", "fancydark", "fancylight");
         element.classList.add("simpledark");
-        localStorage.setItem("theme", "sd");
       } else {
         element.classList.remove("simpledark", "fancydark", "fancylight");
         element.classList.add("simplelight");
-        localStorage.setItem("theme", "sl");
       }
     } else {
       if (element.classList.contains("darkmode")) {
         element.classList.remove("simplelight", "simpledark", "fancylight");
         element.classList.add("fancydark");
-        localStorage.setItem("theme", "fd");
       } else {
         element.classList.remove("simplelight", "simpledark", "fancydark");
         element.classList.add("fancylight");
-        localStorage.removeItem("theme");
       }
     }
   }
+  let x = document.getElementsByTagName("body")[0].classList;
+  if (x.contains("simpledark")) localStorage.setItem("theme", "sd");
+  if (x.contains("simplelight")) localStorage.setItem("theme", "sl");
+  if (x.contains("fancydark")) localStorage.setItem("theme", "fd");
+  if (x.contains("fancylight")) localStorage.removeItem("theme");
 }
