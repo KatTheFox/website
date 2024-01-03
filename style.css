@@ -207,6 +207,6 @@ hr {
   color: var(--white);
 }
 
-#janus.lightmode {
+span#janus.lightmode {
   color: var(--dark-grey);
 }
