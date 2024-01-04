@@ -207,6 +207,9 @@ hr {
   color: var(--white);
 }
 
-span#janus.lightmode {
+span#janus.fancylight {
+  color: var(--dark-grey);
+}
+span#janus.simplelight {
   color: var(--dark-grey);
 }
