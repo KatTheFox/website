@@ -1,3 +1,4 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 :root {
   --cherry-blossom-pink: #ffb3cc;
   --dark-cherry-pink: #ff99bb;
@@ -5,6 +6,7 @@
   --dark-grey: #1f1f1f;
   --grey: #272727;
   --white: #ffffff;
+  font-family: "Fira Code", serif;
 }
 html {
   width: 100%;
