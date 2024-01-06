@@ -40,8 +40,6 @@ html {
 .bbitem {
   position: absolute;
   bottom: 0;
-  background-color: var(--dark-grey);
-  color: var(--cherry-blossom-pink);
   margin: 0;
   padding: 0.25% 0%;
   width: 100%;
