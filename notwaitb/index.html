@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>None Of Those Words Are In The Bible</title>
+    <link rel="icon" href="https://katthefox.github.io/favicon.png" />
+    <link rel="stylesheet" href="https://katthefox.github.io/style.css" />
+  </head>
+  <body class="modeset lightmode">
+    <div id="titlebar">
+      <div id="homewrapper" class="dropdown">
+        <a class="dropbtn" href="https://katthefox.github.io/index.html"
+          >Home</a
+        >
+      </div>
+      <div class="dropdown" id="amdropdown">
+        <a class="dropbtn">About Me</a>
+        <div class="dropdown-content" id="amdropdown-content">
+          <a href="https://katthefox.github.io/aboutme.html">About Me</a>
+          <a href="https://github.com/KatTheFox">My GitHub</a>
+        </div>
+      </div>
+      <div class="dropdown" id="pldropdown">
+        <a class="dropbtn" href="https://katthefox.github.io/projectlist.html"
+          >Project List</a
+        >
+      </div>
+      <div class="dropdown" id="mgdropdown">
+        <a class="dropbtn">Mods and Games</a>
+        <div class="dropdown-content" id="mgdropdown-content">
+          <a href="https://katthefox.github.io/mods/cs.html"
+            >Cultist Simulator</a
+          >
+          <a href="https://katthefox.github.io/mods/boh.html">Book of Hours</a>
+          <a href="https://katthefox.github.io/mods/sn.html">Subnautica</a>
+          <a href="https://katthefox.github.io/mods/mc.html">Minecraft</a>
+        </div>
+      </div>
+      <div class="dropdown" id="dcdropdown">
+        <a class="dropbtn">Discord Bots</a>
+        <div class="dropdown-content" id="dcdropdown-content">
+          <a href="https://github.com/KatTheFox/reynard">Reynard</a>
+          <a href="https://katthefox.github.io/discord/ligeia">Ligeia</a>
+        </div>
+      </div>
+      <div class="dropdown" id="miscdropdown">
+        <a class="dropbtn">Misc Projects</a>
+        <div class="dropdown-content" id="miscdropdown-content">
+          <a href="https://katthefox.github.io/notwaitb">NOTWAITB</a>
+        </div>
+      </div>
+      <div class="dropdown" id="settings">
+        <a class="dropbtn">Site Settings</a>
+        <div class="dropdown-content" id="miscdropdown-content">
+          <a href="javascript:void(0)" onclick="darkMode()">Dark Mode</a>
+          <a href="javascript:void(0)" onclick="simpleMode()">Simple Mode</a>
+        </div>
+      </div>
+      <hr
+        style="margin: 0; padding: 0; bottom: 0; z-index: 2; position: relative"
+      />
+    </div>
+
+    <div class="sidebar" id="left-sidebar">
+      <div id="quicknav">
+        <div id="qntitle"><b>Quick Nav</b></div>
+        <hr />
+        <div class="qnitem">
+          <a class="modeset lightmode" href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1>None of those words are in the bible</h1>
+      <h2>...or are they?</h2>
+      <h3>Only knows words from the NRSV, NIV, and KJV translations</h3>
+      <script src="https://katthefox.github.io/notwaitb/noneofthosewordslib.js"></script>
+      <form>
+        <div class="mb-3">
+          <label for="inputbox" class="form-label">Input text</label>
+          <textarea class="form-control" id="inputbox"></textarea>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="document.getElementById('arethey').innerHTML=noneofthosewords(document.getElementById('inputbox').value)"
+        >
+          Check
+        </button>
+      </form>
+      <span id="arethey"></span>
+    </div>
+
+    <script src="https://katthefox.github.io/script.js"></script>
+  </body>
+</html>
