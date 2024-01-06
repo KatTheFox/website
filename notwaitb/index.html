@@ -77,13 +77,13 @@
       <h3>Only knows words from the NRSV, NIV, and KJV translations</h3>
       <script src="https://katthefox.github.io/notwaitb/noneofthosewordslib.js"></script>
       <form>
-        <div class="mb-3">
+        <div>
           <label for="inputbox" class="form-label">Input text</label>
           <textarea class="form-control" id="inputbox"></textarea>
         </div>
         <button
           type="button"
-          class="btn btn-primary"
+          class="modeset lightmode"
           onclick="document.getElementById('arethey').innerHTML=noneofthosewords(document.getElementById('inputbox').value)"
         >
           Check
