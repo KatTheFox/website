@@ -127,11 +127,11 @@ body {
   display: inline-block;
   font-size: 14px;
 }
-a {
+a.fancylight {
   color: #530d82;
   text-decoration: none;
 }
-a:visited {
+a.fancylight:visited {
   color: #530d82;
 }
 a.fancydark:visited {
