@@ -84,14 +84,12 @@ body {
 #titlebar {
   position: relative;
   top: 0%;
+  transition: background 0.3s, color 0.3s;
   left: 0%;
   width: 100%;
-  background-color: var(--dark-grey);
 }
 /* Dropdown Button */
 .dropbtn {
-  background-color: var(--dark-grey);
-  color: var(--cherry-blossom-pink);
   margin: 0;
   padding: 3% 0%;
   display: inline-block;
@@ -153,6 +151,57 @@ a.simpledark:visited {
 a.simpledark {
   color: #c178f2;
 }
+
+a.dropbtn.fancydark {
+  color: var(--cherry-blossom-pink);
+}
+
+a.dropbtn.fancylight {
+  color: var(--black);
+}
+a.dropbtn.simpledark {
+  color: var(--white);
+}
+a.dropbtn.simplelight {
+  color: var(--black);
+}
+a.dropbtn.fancydark:visited {
+  color: var(--cherry-blossom-pink);
+}
+
+a.dropbtn.fancylight:visited {
+  color: var(--black);
+}
+a.dropbtn.simpledark:visited {
+  color: var(--white);
+}
+a.dropbtn.simplelight:visited {
+  color: var(--black);
+}
+
+.dropdown-content a.fancylight {
+  color: var(--black);
+}
+.dropdown-content a.simpledark {
+  color: var(--white);
+}
+.dropdown-content a.simplelight {
+  color: var(--black);
+}
+.dropdown-content a.fancydark:visited {
+  color: var(--cherry-blossom-pink);
+}
+
+.dropdown-content a.fancylight:visited {
+  color: var(--black);
+}
+.dropdown-content a.simpledark:visited {
+  color: var(--white);
+}
+.dropdown-content a.simplelight:visited {
+  color: var(--black);
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -177,20 +226,48 @@ a.simpledark {
   color: var(--cherry-blossom-pink);
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a.fancydark:hover {
   background-color: var(--dark-cherry-pink);
   color: var(--black);
 }
-
+.dropdown-content a.fancylight:hover {
+  background-color: var(--dark-grey);
+  color: var(--dark-cherry-pink);
+}
+.dropdown-content a.simpledark:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.dropdown-content a.simplelight:hover {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+
+.dropdown:hover .dropbtn.fancydark {
   background-color: var(--dark-cherry-pink);
   color: var(--black);
+}
+.dropdown:hover .dropbtn.fancylight {
+  background-color: var(--dark-grey);
+  color: var(--dark-cherry-pink);
+}
+.dropdown:hover .dropbtn.simpledark {
+  background-color: var(--white);
+  color: var(--black);
+}
+.dropdown:hover .dropbtn.simplelight {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 #homebtn:hover {
   background-color: var(--cherry-blossom-pink);
@@ -199,10 +276,6 @@ a.simpledark {
 .qnitem {
   margin: 3%;
 }
-/* .darkmode{
-  background-color: var(--dark-grey);
-  color: var(--cherry-blossom-pink);
-} */
 hr {
   pointer-events: none;
 }
